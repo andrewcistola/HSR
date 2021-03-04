@@ -1,4 +1,4 @@
-# Health Services Research
+<![](_fig/labeled.jpg)
 Notes, code, and references for common methods used in Health Services Research.
 
 ## About this Repository

@@ -6,6 +6,7 @@ This a private repository containing comprehensive resources for conducting heal
 ## Repository Contents:
 `_code` Code scripts used across projects including FractureProof v2.1<br>
 `_data` Data files used across projects including the 2020 release from the Healthy Neighborhoods Repository<br>
+`_fig` Exported files and figures used across projects<br>
 `.vscode` Settings for VS Code IDE for use with allocativ products<br>
 `LICENSE` Generic open source MIT license for use with allocativ products<br>
 `.gitattributes` File extensions marked for GH large file storage for use with allocativ products<br>

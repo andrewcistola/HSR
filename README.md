@@ -4,6 +4,8 @@
 This a private repository containing comprehensive resources for conducting health services research. This includes notes on econometric and biostatistical methods, corresponding code scripts for multiple applications, and references to previously published example studies. This repository was created as a study guide for the comprehsnive exams to qualify for PhD cantidacy in the Dept. of Health Servcies Research, Management, and Policy at the Unviersity of Florida.
 
 ## Repository Contents:
+`CODE` Code scripts and decriptive notes for each regression model or statistical test fro use in multiple programs
+`NOTES` Descriptive notes on OLS assumptions and approaches to addressing violations
 `_code` Code scripts used across projects including FractureProof v2.1<br>
 `_data` Data files used across projects including the 2020 release from the Healthy Neighborhoods Repository<br>
 `_fig` Exported files and figures used across projects<br>
@@ -66,3 +68,5 @@ While the author (Andrew Cistola) is a Florida DOH employee and a University of 
 
 ### allocativ
 This repository is part of the larger allocativ project dedicated to prodiving analytical tools that are 'open source for public health.' Learn more at https://allocativ.com. 
+
+(C) Andrew S. Cistola, MPH

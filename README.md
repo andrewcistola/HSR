@@ -1,5 +1,4 @@
-<![](_fig/labeled.jpg)
-Notes, code, and references for common methods used in Health Services Research.
+![](_fig/labeled.jpg)
 
 ## About this Repository
 This a private repository containing comprehensive resources for conducting health services research. This includes notes on econometric and biostatistical methods, corresponding code scripts for multiple applications, and references to previously published example studies. This repository was created as a study guide for the comprehsnive exams to qualify for PhD cantidacy in the Dept. of Health Servcies Research, Management, and Policy at the Unviersity of Florida.

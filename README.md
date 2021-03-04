@@ -5,11 +5,8 @@ Notes, code, and references for common methods used in Health Services Research.
 This a private repository containing comprehensive resources for conducting health services research. This includes notes on econometric and biostatistical methods, corresponding code scripts for multiple applications, and references to previously published example studies. This repository was created as a study guide for the comprehsnive exams to qualify for PhD cantidacy in the Dept. of Health Servcies Research, Management, and Policy at the Unviersity of Florida.
 
 ## Repository Contents:
-`_archive` Old files from previous projects<br>
 `_code` Code scripts used across projects including FractureProof v2.1<br>
 `_data` Data files used across projects including the 2020 release from the Healthy Neighborhoods Repository<br>
-`_fig` Exported figures used across projects<br>
-`_refs` References and documentation used across projects<br>
 `.vscode` Settings for VS Code IDE for use with allocativ products<br>
 `LICENSE` Generic open source MIT license for use with allocativ products<br>
 `.gitattributes` File extensions marked for GH large file storage for use with allocativ products<br>

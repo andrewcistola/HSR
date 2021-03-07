@@ -16,7 +16,7 @@ stamp = date() # Save Date and timestamp
 setwd(directory) # Set wd to project repository
 
 ## Import data
-df_meps = read.csv('MEPS_2019_raw.CSV') # Import dataset from _data folder 
+df_meps = read.csv('MEPS_2019_raw.csv') # Import dataset from _data folder 
 df_meps = df_meps[which(df_meps$AGE19X >= 65), ] # based on variable values
 head(df_meps) # Print mini table with first 6 observations 
 nrow(df_meps) # Number of rows
@@ -60,7 +60,8 @@ df_X = df_XY[c('DIABDX_M18', # Diabetes Diagnosis
                         'EMPHDX', # 2 = emphezema diagnosis
                         'CHDDX', # 2 = Coronary heart disease diagnosis
                         'ANGIDX', # 2 = Angina diagnosis 
-                        'CANCERDX' # 2 = Cancer Diagnosis
+                        'CANCERDX', # 2 = Cancer Diagnosis
+                        'AGE19X'
                         )] # 
 df_X = replace(df_X, df_X == 2, 0) # Replace all values below 0 with 0 
 df_X = replace(df_X, df_X == NA, 0) # Replace all values below 0 with 0 
@@ -93,19 +94,45 @@ df_S$SDOH = df_S$HIDEG + df_S$EMPST53 + df_S$HRWG31X + df_S$RETPLN31 + df_S$HWEL
 summary(df_S) # Print mini table with first 6 observations 
 head(df_S)# Print mini table with first 6 observations 
 
-
-df_ = merge(df_X, df_Y)
-head(df_)# Print mini table with first 6 observations 
-
-
-
 ## Create outcome table
 df_Y = df_XY[c('IPNGT19')] # Select columns of dataframe
 df_Y = replace(df_Y, df_Y == NA, 0) # Replace all values below 0 with 0 
 summary(df_Y) # Print mini table with first 6 observations 
 
+### Create final table
+df_F = merge(df_X, df_S, by = 0, keep = FALSE) # Join dataframes by index
+df_F = merge(df_F, df_Y, by = 0, keep = FALSE) # Join data frames by index
+df_F = df_F[c('CHRCMI', 'SDOH', 'IPNGT19', 'AGE19X')] # Select final varibales for model
+df_F$INT = df_F$CHRCMI * df_F$SDOH
+head(df_F)# Print mini table with first 6 observations 
+summary(df_F) # Print mini table with first 6 observations 
 
+### OLS Model
+y <- df_F$IPNGT19
+x1 <- df_F$CHRCMI
+x2 <- df_F$SDOH
+x3 <- df_F$AGE19X
+x4 <- df_F$INT
+model = lm(y ~ x1 + x2 + x3 + x4)
+res = resid(model)
 
+### Utt's Rainbox Test
+library(lmtest)
+raintest(y ~ x1 + x2 + x3 + x4)
+
+### Residuals Plot
+library(ggplot2)
+png(paste(name, '_res.png'))
+plot(fitted(model), res)
+abline(0,0)
+dev.off()
+
+### Histogram
+library(ggplot2)
+png(paste(name, '_hist.png'))
+plot(fitted(model), res)
+abline(0,0)
+dev.off()
 
 
 

@@ -8,6 +8,7 @@ This regression method is used for
 #### Equation:
 
 #### Assumptions:
+Two common assumptions can be made about the individual specific effect: the random effects assumption and the fixed effects assumption. The random effects assumption is that the individual unobserved heterogeneity is uncorrelated with the independent variables. The fixed effect assumption is that the individual specific effect is correlated with the independent variables.[5]
 
 #### Common Usage:
 

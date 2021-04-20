@@ -1,4 +1,4 @@
-![](_fig/labeled.jpg)
+![](labeled.jpg)
 
 ## About this Repository
 This a private repository containing comprehensive resources for conducting health services research. This includes notes on econometric and biostatistical methods, corresponding code scripts for multiple applications, and references to previously published example studies. This repository was created as a study guide for the comprehsnive exams to qualify for PhD cantidacy in the Dept. of Health Servcies Research, Management, and Policy at the Unviersity of Florida.
@@ -7,9 +7,7 @@ This a private repository containing comprehensive resources for conducting heal
 `CODE` Code scripts and decriptive notes for each regression model or statistical test fro use in multiple programs<br>
 `NOTES` Descriptive notes on OLS assumptions and approaches to addressing violations<br>
 `MEPS` AHRQ Medical Expenditure Panel Survey<br>
-`_code` Code scripts used across projects including FractureProof v2.1<br>
-`_data` Data files used across projects including the 2020 release from the Healthy Neighborhoods Repository<br>
-`_fig` Exported files and figures used across projects<br>
+`NHANES` CDC's National Health and Nuitritioinal Examination Survey from 1999<br>
 `.vscode` Settings for VS Code IDE for use with allocativ products<br>
 `LICENSE` Generic open source MIT license for use with allocativ products<br>
 `.gitattributes` File extensions marked for GH large file storage for use with allocativ products<br>

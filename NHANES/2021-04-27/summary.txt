@@ -1,0 +1,10 @@
+####################
+
+Title: HSR Resource Repository
+Subtitle: National Health and Nutritional Examination Survey
+Author(s): Andrew S. Cistola, MPH
+Local Path: /home/drewc/GitHub/_dev_HSR/NHANES/2021-04-27/
+Time Run: 2021-04-27 11:54:40.955756
+
+####################
+

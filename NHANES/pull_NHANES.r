@@ -1,4 +1,4 @@
-pull_NHANES <- function(Files, Cycles)
+pull_stack <- function(Files, Cycles, Descriptions)
     {
         library(RNHANES)
         library(tidyverse)
@@ -7,7 +7,7 @@ pull_NHANES <- function(Files, Cycles)
         l_NHV <- base::list()
         for (I in Cycles)
             {
-                df_DATA = data.frame(Files, Description)
+                df_DATA = data.frame(Files, Descriptions)
                 df_DATA$Cycle <- I
                 l_NH <- base::list()
                 for (i in c(as.numeric(rownames(df_DATA))))

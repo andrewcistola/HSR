@@ -13,4 +13,4 @@ This subrepository contains resources for conducting health services research us
 ### Disclaimer
 This is a subrepository of (https://github.com/andrewcistola/HSR) please go there for more documentation.<br>
 
-<hr>(c) Andrew S. Cistola, MPH 2021
+<hr><center>&copy; Andrew S. Cistola, MPH 2021</center>

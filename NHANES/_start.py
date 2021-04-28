@@ -104,7 +104,7 @@ text_file.write('\n')
 text_file.write('### ' + 'Disclaimer' + '\n')
 text_file.write('This is a subrepository of (' + remote + ') please go there for more documentation.' + '<br>' + '\n')
 text_file.write('\n')
-text_file.write('<hr>' + '(c) ' + author + ' ' + year)
+text_file.write('<hr>' + '<center>'+ '&copy ' + author + ' ' + year + '</center>')
 text_file.close() # Close file
 
 ## _keys

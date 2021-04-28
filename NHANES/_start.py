@@ -89,16 +89,22 @@ text_file.close() # Close file
 
 ### README
 text_file = open(path + project + subject + 'README.md', 'w') # Write new corresponding text file
-text_file.write('![](header.jpg)\n\n')
-text_file.write('###About this Sub-repository\n' + description + ' (' + reference + '). Created by ' + author + '.\n\n') 
-text_file.write('###Directory Contents\n') 
-text_file.write('`_start.py` Python script with local variables, libraries, file connections, and API keys<br>\n') 
-text_file.write('`_start.r` R script with local variables, libraries, file connections, and API keys<br>\n') 
-text_file.write('`HSA7708.r` Script for replication study in HSA 7708 taken from UF-HSRMP in Spring 2021<br>\n') 
-text_file.write('`pull_stack.r` User defined R fucntiuon that pulls and stacks multiple data files from multiple NHANES cycles<br>\n') 
-text_file.write('`2021-XX-XX` Data, figures, and outputs created on the given date on the folder label<br>\n\n')
-text_file.write('###Disclaimer\nThis is a subrepository, please go here for more documentation: ' + remote + '\n\n')
-text_file.write('(c) ' + author + ' ' + year)
+text_file.write('![](header.jpg)' + '\n')
+text_file.write('\n')
+text_file.write('## ' + 'About this Sub-repository' + '\n')
+text_file.write(description + ' (' + reference + '). Created by ' + author + '.' + '\n')
+text_file.write('\n')
+text_file.write('### ' + 'Directory Contents' + '\n') 
+text_file.write('`_start.py` Python script with local variables, libraries, file connections, and API keys' + '<br>' + '\n') 
+text_file.write('`_start.r` R script with local variables, libraries, file connections, and API keys' + '<br>' + '\n') 
+text_file.write('`HSA7708.r` Script for replication study in HSA 7708 taken from UF-HSRMP in Spring 2021' + '<br>' + '\n') 
+text_file.write('`pull_stack.r` User defined R fucntiuon that pulls and stacks multiple data files from multiple NHANES cycles' + '<br>' + '\n') 
+text_file.write('`2021-XX-XX` Data, figures, and outputs created on the given date on the folder label' + '<br>' + '\n')
+text_file.write('\n')
+text_file.write('### ' + 'Disclaimer' + '\n')
+text_file.write('This is a subrepository of (' + remote + ') please go there for more documentation.' + '<br>' + '\n')
+text_file.write('\n')
+text_file.write('<hr>' + '(c) ' + author + ' ' + year)
 text_file.close() # Close file
 
 ## _keys

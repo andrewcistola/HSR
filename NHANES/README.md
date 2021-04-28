@@ -1,4 +1,4 @@
-![](https://i.ytimg.com/vi/4QQm-Ke6w90/maxresdefault.jpg)
+![](header.jpg)
 
 ###About this Sub-repository
 This subrepository contains resources for conducting health services research using publicly avaiulable data from the Centers for Disease Control (CDC) National Health and Nutrition Examination Survey (https://wwwn.cdc.gov/nchs/nhanes/Default.aspx). Created by Andrew S. Cistola, MPH.

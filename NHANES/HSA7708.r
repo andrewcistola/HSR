@@ -1,7 +1,5 @@
-# HSR
-## HSA 7708 Replication Study
-
-https://doi.org/10.3945/jn.109.112573
+# HSR/NHANES/HSA7708_replication
+script = 'HSA 7708 Replication Project https://doi.org/10.3945/jn.109.112573'
 
 ## Pull NHANES Data
 Files = c('DEMO', 'DIQ', 'BPQ', 'FSQ', 'L13', 'L13AM')
@@ -10,7 +8,6 @@ Descriptions = c('Demographic Variables and Sample Weights', 'Diabetes', 'Blood 
 df_NH = pull_stack(Files, Cycles, Descriptions)
 
 ## Modify Variables
-
 df_NH$FSDAD[df_NH$FSDAD > 2] <- 1
 df_NH$FSDAD[df_NH$FSDAD != 1] <- 0
 df_NH$FSDAD[!is.finite(df_NH$FSDA)] <- 0

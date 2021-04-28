@@ -1,0 +1,20 @@
+####################
+
+Author(s): Andrew S. Cistola, MPH
+Title: HSR Resource Repository
+Subtitle: National Health and Nutritional Examination Survey
+Data Reference: https://wwwn.cdc.gov/nchs/nhanes/Default.aspx
+
+Local Path: /home/drewc/GitHub/_HSR/NHANES/2021-04-28/
+Remote Host: https://github.com/andrewcistola/HSR
+Time Run: 2021-04-28 08:42:43.430938
+
+Conda Environment: allocativ_v2.1
+Python Version: 3.6.10
+R version 3.6.3 (2020-02-29) 
+Platform: x86_64-pc-linux-gnu (64-bit) Ubuntu 20.04.2 LTS 
+
+(c) Andrew S. Cistola, MPH 2021 
+
+#################### 
+

@@ -13,7 +13,7 @@ pull_stack <- function(Files, Cycles, Descriptions)
                 for (i in c(as.numeric(rownames(df_DATA))))
                     {
                         df_i = nhanes_load_data(as.character(df_DATA$Files[i]), year = I)
-                        df_i$files_name <- NULL
+                        df_i$file_name <- NULL
                         df_i$cycle <- NULL
                         df_i$begin_year <- NULL
                         df_i$end_year <- NULL
@@ -39,7 +39,6 @@ pull_stack <- function(Files, Cycles, Descriptions)
         head(df_NH)
         df_NH = df_NH %>% relocate('Cycle')
         df_NH = df_NH %>% relocate('SEQN')
-        df_NH$SEQN <- as.character('SEQN')
         df_NH$SEQN_Cycle <- paste(as.character(df_NH$SEQN), '_', as.character(df_NH$Cycle), sep = '')       
         write.csv(df_NH, paste('_data/NHANES_', format(Sys.time(), "%m-%d_%H%M"), '.csv', sep = ''), row.names = FALSE) # Clean in excel and select variable
         options(width = 250)

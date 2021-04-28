@@ -3,7 +3,7 @@
 ## About this Repository
 This a private repository containing helpful resources for conducting health services research. This includes notes on econometric and biostatistical methods, corresponding code scripts for various statistical software packages, and references to previously published example studies. This repository was created as a study guide for the comprehsnive exams to qualify for PhD cantidacy in the Dept. of Health Servcies Research, Management, and Policy at the Unviersity of Florida.
 
-## Repository Contents:
+### Repository Contents:
 `CODE` Code scripts and decriptive notes for each regression model or statistical test fro use in multiple programs<br>
 `NOTES` Descriptive notes on OLS assumptions and approaches to addressing violations<br>
 `MEPS` AHRQ Medical Expenditure Panel Survey<br>
@@ -34,10 +34,10 @@ Tables with features and targets used for modeling utilize standard names:<br>
 `df_X`, `df_Y`, `df_XY`<br>
 When using numbers, two digits are used by default (ex. `df_01`)
 
-## Disclaimer
+### Disclaimer
 While the author (Andrew Cistola) is a Florida DOH employee and a University of Florida PhD student, these are NOT official publications by the Florida DOH, the University of Florida, or any other agency. All information in this repository is available for public review and dissemination but is not to be used for making medical decisions. All code and data inside this repository is available for open source use per the terms of the included license.
 
 ### allocativ
 This repository is part of the larger allocativ project dedicated to prodiving analytical tools that are 'open source for public health.' Learn more at https://allocativ.com. 
 
-(C) Andrew S. Cistola, MPH
+<hr>&copy; Andrew S. Cistola, MPH 2021

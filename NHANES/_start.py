@@ -102,7 +102,7 @@ text_file.write('`pull_stack.r` User defined R fucntiuon that pulls and stacks m
 text_file.write('`2021-XX-XX` Data, figures, and outputs created on the given date on the folder label' + '<br>' + '\n')
 text_file.write('\n')
 text_file.write('### ' + 'Disclaimer' + '\n')
-text_file.write('This is a subrepository of (' + remote + ') please go there for more documentation.' + '<br>' + '\n')
+text_file.write('This is a subrepository of (' + remote + '). Please refer there for license, documentation, and packages.' + '<br>' + '\n')
 text_file.write('\n')
 text_file.write('<hr>' + '&copy;' + ' ' + author + ' ' + year)
 text_file.close() # Close file

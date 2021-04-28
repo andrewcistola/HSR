@@ -10,7 +10,7 @@ This subrepository contains resources for conducting health services research us
 `pull_stack.r` User defined R fucntiuon that pulls and stacks multiple data files from multiple NHANES cycles<br>
 `2021-XX-XX` Data, figures, and outputs created on the given date on the folder label<br>
 
-### Disclaimer
-This is a subrepository of (https://github.com/andrewcistola/HSR) please go there for more documentation.<br>
+### Home Repository
+This is a subrepository of (https://github.com/andrewcistola/HSR), please refer there for license, documentation, and packages.<br>
 
-<hr><center>&copy; Andrew S. Cistola, MPH 2021</center>
+<hr>&copy; Andrew S. Cistola, MPH 2021

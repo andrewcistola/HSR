@@ -91,7 +91,7 @@ text_file.close() # Close file
 text_file = open(path + project + subject + 'README.md', 'w') # Write new corresponding text file
 text_file.write('![](header.jpg)' + '\n')
 text_file.write('\n')
-text_file.write('## ' + 'About this Sub-repository' + '\n')
+text_file.write('## ' + 'About this Subrepository' + '\n')
 text_file.write(description + ' (' + reference + '). Created by ' + author + '.' + '\n')
 text_file.write('\n')
 text_file.write('### ' + 'Directory Contents' + '\n') 
@@ -104,7 +104,7 @@ text_file.write('\n')
 text_file.write('### ' + 'Disclaimer' + '\n')
 text_file.write('This is a subrepository of (' + remote + ') please go there for more documentation.' + '<br>' + '\n')
 text_file.write('\n')
-text_file.write('<hr>' + '<center>'+ '&copy ' + author + ' ' + year + '</center>')
+text_file.write('<hr>' + '&copy;' + ' ' + author + ' ' + year)
 text_file.close() # Close file
 
 ## _keys

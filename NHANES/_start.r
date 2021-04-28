@@ -17,7 +17,6 @@ description = 'This subrepository contains resources for conducting health servi
 ## _setup
 
 ### Libraries
-library(conflicted)
 library(data.table)
 library(tidyverse) # All of the libraries above in one line of code
 library(ggplot2) # ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell ggplot2 how to map variables to aesthetics, what graphical primitives to use, and it takes care of the details.
@@ -62,6 +61,12 @@ library(smacpod)
 library(rsatscan)
 library(spatstat)
 library(RColorBrewer) # Creates nice looking color palettes especially for thematic maps in R
+library(RNHANES) #  Facilitates Analysis of CDC NHANES Data
+library(survey) #  Analysis of Complex Survey Samples with Description Summary statistics, two-sample tests, rank tests, generalised linear models, cumulative link models, Cox models, loglinear models, and general maximum pseudolikelihood estimation for multistage stratified, cluster-sampled, unequally weighted survey samples. Variances by Taylor series linearisation or replicate weights. Post-stratification, calibration, and raking. Two-phase subsampling designs. Graphics. PPS sampling without replacement. Principal components, factor analysis.
+
+### Conflicts
+library(conflicted)
+conflict_prefer("list", "base")
 
 ### Variables
 day = Sys.Date() # Save dimple date as string
@@ -85,8 +90,6 @@ cat(c('\n(c)', author, format(Sys.Date(), "%Y"), '\n\n'), file = 'summary.txt', 
 cat(c('####################', '\n\n'), file = 'summary.txt', append = TRUE)
 sink()
 
-R.version()
-info = sessionInfo(R.version, platform, running)
 ## _keys
 
 ### API keys

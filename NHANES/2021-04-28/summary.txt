@@ -16,5 +16,214 @@ Platform: x86_64-pc-linux-gnu (64-bit) Ubuntu 20.04.2 LTS
 
 (c) Andrew S. Cistola, MPH 2021 
 
+####################
+
+HSA 7708 Replication Project
+https://doi.org/10.3945/jn.109.112573 
+
+NHANES Cycles:  2003-2004 
+NHANES Files:  DEMO DIQ BPQ BPX FSQ L13 L13AM L10AM 
+NHANES Variables: 
+    RIAGENDR        RIDAGEYR        RIDRETH1        DMDEDUC2        INDFMPIR         BPQ020          BPXSY1          BPXDI1           BPQ080          LBXTC           DIQ010          LBXGLU          FSDAD     
+ Min.   :1.000   Min.   : 0.00   Min.   :1.000   Min.   :1.000   Min.   :0.000   Min.   :1.000   Min.   : 72.0   Min.   :  0.00   Min.   :1.000   Min.   : 68.0   Min.   :1.000   Min.   : 38.4   Min.   :1.00  
+ 1st Qu.:1.000   1st Qu.:10.00   1st Qu.:1.000   1st Qu.:2.000   1st Qu.:0.920   1st Qu.:1.000   1st Qu.:106.0   1st Qu.: 58.00   1st Qu.:1.000   1st Qu.:155.0   1st Qu.:2.000   1st Qu.: 87.7   1st Qu.:1.00  
+ Median :2.000   Median :19.00   Median :3.000   Median :3.000   Median :1.790   Median :2.000   Median :116.0   Median : 68.00   Median :2.000   Median :181.0   Median :2.000   Median : 94.0   Median :1.00  
+ Mean   :1.512   Mean   :29.67   Mean   :2.723   Mean   :3.141   Mean   :2.249   Mean   :1.745   Mean   :120.2   Mean   : 66.38   Mean   :1.675   Mean   :186.3   Mean   :1.957   Mean   :100.4   Mean   :1.49  
+ 3rd Qu.:2.000   3rd Qu.:48.00   3rd Qu.:4.000   3rd Qu.:4.000   3rd Qu.:3.530   3rd Qu.:2.000   3rd Qu.:130.0   3rd Qu.: 76.00   3rd Qu.:2.000   3rd Qu.:211.0   3rd Qu.:2.000   3rd Qu.:102.0   3rd Qu.:2.00  
+ Max.   :2.000   Max.   :85.00   Max.   :5.000   Max.   :9.000   Max.   :5.000   Max.   :9.000   Max.   :266.0   Max.   :134.00   Max.   :9.000   Max.   :727.0   Max.   :9.000   Max.   :686.2   Max.   :4.00  
+                                                 NA's   :15800   NA's   :2864    NA's   :12503   NA's   :11269   NA's   :11269    NA's   :20842   NA's   :7636    NA's   :1525    NA's   :21481   NA's   :1407  
+
+NHANES Descriptions: 
+   NHANES_Variables                                NHANES_Description
+1          RIAGENDR                                            Gender
+2          RIDAGEYR                                  Age at Screening
+3          RIDRETH1                                    Race/Ethnicity
+4          DMDEDUC2                      Education Level - Adults 20+
+5          INDFMPIR                    Family income to Poverty Ratio
+6            BPQ020 Doctor told you that you have high blood pressure
+7            BPXSY1                           Systolic Blood Pressure
+8            BPXDI1                          Diastolic Blood Pressure
+9            BPQ080    Doctor told you that you have high cholesterol
+10            LBXTC                         Total Cholesterol (mg/dL)
+11           DIQ010            Doctor told you that you have diabetes
+12           LBXGLU                           Glucose, plasma (mg/dL)
+13            FSDAD                      Adult food security category
+
+Study Variables: 
+     Gender            Age             Race         Education          Income       Hypertension    Hyperlipidemia      Diabetes            Food      
+ Min.   :0.0000   Min.   : 0.00   Min.   :1.000   Min.   :0.0000   Min.   :1.000   Min.   :0.0000   Min.   :0.0000   Min.   :0.00000   Min.   :0.000  
+ 1st Qu.:0.0000   1st Qu.:10.00   1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:4.000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.00000   1st Qu.:0.000  
+ Median :1.0000   Median :19.00   Median :1.000   Median :0.0000   Median :5.000   Median :1.0000   Median :0.0000   Median :0.00000   Median :0.000  
+ Mean   :0.5122   Mean   :29.67   Mean   :1.558   Mean   :0.1622   Mean   :4.412   Mean   :0.6611   Mean   :0.3006   Mean   :0.05844   Mean   :0.156  
+ 3rd Qu.:1.0000   3rd Qu.:48.00   3rd Qu.:3.000   3rd Qu.:0.0000   3rd Qu.:5.000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:0.00000   3rd Qu.:0.000  
+ Max.   :1.0000   Max.   :85.00   Max.   :3.000   Max.   :1.0000   Max.   :5.000   Max.   :1.0000   Max.   :1.0000   Max.   :1.00000   Max.   :1.000  
+                                                                   NA's   :3173                                                                       
+
+Study Descriptions: 
+  Study_Variables                                                           Study_Description
+1          Gender                                          Female Identifying (RIAGENDR == 2)
+2             Age                               Age in years (18 to 65) (RIAGENDR = RIAGENDR)
+3            Race                                       Non-white or Hispanic (RIDRETH1 != 3)
+4       Education                                High School Education or less (DMDEDUC2 < 3)
+5          Income                                Income Relative to Poverty Line (above 200%)
+6    Hypertension   Hypertension Diagnosed (BPQ020 = 1), Clinical (BPXDI1 > 140, BPXSY1 > 90)
+7  Hyperlipidemia Hyperlipidemia Diagnosed (BPQ080 = 1), Clinical (LBXTC > 200, LBDLDL > 160)
+8        Diabetes                    Diabetes Diagnosed (DQI010 = 1), Clinical (LBXGLU > 126)
+9            Food                                 Food Security Low or Very Low, (FSDAD >= 3)
+
+#################### 
+
+Generalized Regression Models using Survey Weights 
+
+Title:
+ Hypertension and Food adjusted by Gender Age Race 
+
+Call:
+svyglm(formula = F1a, design = S, family = poisson(), data = D)
+
+Survey design:
+svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
+    weights_column], data = nhanes_data)
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -0.2527051  0.0278850  -9.062 3.05e-11 ***
+Food         0.0109048  0.0353294   0.309   0.7592    
+Gender      -0.0312705  0.0119395  -2.619   0.0124 *  
+Age          0.0025682  0.0004602   5.580 1.84e-06 ***
+Race         0.0099060  0.0103297   0.959   0.3433    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 0.1393681)
+
+Number of Fisher Scoring iterations: 4
+
+Title:
+ Hypertension and Food adjusted by Gender Age Race Education Income 
+
+Call:
+svyglm(formula = F1b, design = S, family = poisson(), data = D)
+
+Survey design:
+svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
+    weights_column], data = nhanes_data)
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.3428518  0.7938217  -1.692  0.09890 .  
+Food         0.0221267  0.0352600   0.628  0.53406    
+Gender      -0.0328343  0.0118861  -2.762  0.00879 ** 
+Age          0.0026574  0.0004617   5.756 1.23e-06 ***
+Race         0.0189402  0.0103966   1.822  0.07637 .  
+Education   -0.0636178  0.0246702  -2.579  0.01391 *  
+Income       0.2167186  0.1582173   1.370  0.17880    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 0.1400928)
+
+Number of Fisher Scoring iterations: 4
+
+Title:
+ Hyperlipidemia and Food adjusted by Gender Age Race 
+
+Call:
+svyglm(formula = F2a, design = S, family = poisson(), data = D)
+
+Survey design:
+svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
+    weights_column], data = nhanes_data)
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.812500   0.074075 -24.469  < 2e-16 ***
+Food        -0.041807   0.087862  -0.476  0.63679    
+Gender      -0.091873   0.026370  -3.484  0.00121 ** 
+Age          0.027037   0.001327  20.380  < 2e-16 ***
+Race         0.030188   0.018209   1.658  0.10517    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 0.4773669)
+
+Number of Fisher Scoring iterations: 5
+
+Title:
+ Hyperlipidemia and Food adjusted by Gender Age Race Education Income 
+
+Call:
+svyglm(formula = F2b, design = S, family = poisson(), data = D)
+
+Survey design:
+svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
+    weights_column], data = nhanes_data)
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -1.927533   1.027867  -1.875  0.06845 .  
+Food        -0.052303   0.099150  -0.528  0.60091    
+Gender      -0.090667   0.026952  -3.364  0.00176 ** 
+Age          0.027203   0.001322  20.578  < 2e-16 ***
+Race         0.032783   0.019567   1.675  0.10206    
+Education   -0.054635   0.036690  -1.489  0.14472    
+Income       0.021790   0.207629   0.105  0.91697    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 0.4801104)
+
+Number of Fisher Scoring iterations: 5
+
+Title:
+ Diabetes and Food adjusted by Gender Age Race 
+
+Call:
+svyglm(formula = F3a, design = S, family = poisson(), data = D)
+
+Survey design:
+svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
+    weights_column], data = nhanes_data)
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -6.894838   0.343753 -20.058  < 2e-16 ***
+Food         0.475649   0.336543   1.413 0.165292    
+Gender      -0.396177   0.101548  -3.901 0.000357 ***
+Age          0.078973   0.005774  13.677  < 2e-16 ***
+Race         0.327536   0.070096   4.673 3.34e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 0.8760317)
+
+Number of Fisher Scoring iterations: 6
+
+Title:
+ Diabetes and Food adjusted by Gender Age Race Education Income 
+
+Call:
+svyglm(formula = F3b, design = S, family = poisson(), data = D)
+
+Survey design:
+svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
+    weights_column], data = nhanes_data)
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) -4.296932   3.453839  -1.244 0.221081    
+Food         0.375100   0.339335   1.105 0.275937    
+Gender      -0.370249   0.101530  -3.647 0.000793 ***
+Age          0.076839   0.005729  13.413 5.46e-16 ***
+Race         0.222996   0.071132   3.135 0.003309 ** 
+Education    0.659817   0.139610   4.726 3.11e-05 ***
+Income      -0.495788   0.680087  -0.729 0.470466    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for poisson family taken to be 0.8796346)
+
+Number of Fisher Scoring iterations: 6
+
 #################### 
 

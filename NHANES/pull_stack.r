@@ -40,6 +40,7 @@ pull_stack <- function(Files, Cycles, Descriptions)
         df_NH = df_NH %>% relocate('Cycle')
         df_NH = df_NH %>% relocate('SEQN')
         df_NH$SEQN_Cycle <- paste(as.character(df_NH$SEQN), '_', as.character(df_NH$Cycle), sep = '')       
+        df_NH = as.data.frame(df_NH)
         write.csv(df_NH, paste('_data/NHANES_', format(Sys.time(), "%m-%d_%H%M"), '.csv', sep = ''), row.names = FALSE) # Clean in excel and select variable
         options(width = 250)
         sink(file = paste('_data/NHANES_', format(Sys.time(), "%m-%d_%H%M"), '.txt', sep = ''))

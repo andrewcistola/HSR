@@ -76,34 +76,10 @@ Study Descriptions:
 Generalized Regression Models using Survey Weights 
 
 Title:
- Hypertension and Food adjusted by Gender Age Race 
-
-Call:
-svyglm(formula = F1a, design = S, family = poisson(), data = D)
-
-Survey design:
-svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
-    weights_column], data = nhanes_data)
-
-Coefficients:
-              Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -0.2527051  0.0278850  -9.062 3.05e-11 ***
-Food         0.0109048  0.0353294   0.309   0.7592    
-Gender      -0.0312705  0.0119395  -2.619   0.0124 *  
-Age          0.0025682  0.0004602   5.580 1.84e-06 ***
-Race         0.0099060  0.0103297   0.959   0.3433    
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-(Dispersion parameter for poisson family taken to be 0.1393681)
-
-Number of Fisher Scoring iterations: 4
-
-Title:
  Hypertension and Food adjusted by Gender Age Race Education Income 
 
 Call:
-svyglm(formula = F1b, design = S, family = poisson(), data = D)
+svyglm(formula = F1, design = S, family = poisson(), data = D)
 
 Survey design:
 svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
@@ -111,49 +87,29 @@ svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[,
 
 Coefficients:
               Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -1.3428518  0.7938217  -1.692  0.09890 .  
-Food         0.0221267  0.0352600   0.628  0.53406    
-Gender      -0.0328343  0.0118861  -2.762  0.00879 ** 
-Age          0.0026574  0.0004617   5.756 1.23e-06 ***
-Race         0.0189402  0.0103966   1.822  0.07637 .  
-Education   -0.0636178  0.0246702  -2.579  0.01391 *  
-Income       0.2167186  0.1582173   1.370  0.17880    
+(Intercept) -0.2495230  0.0426300  -5.853 9.05e-07 ***
+Food         0.0205038  0.0173136   1.184 0.243665    
+Gender      -0.0161556  0.0146727  -1.101 0.277795    
+Age          0.0021963  0.0005225   4.203 0.000154 ***
+Race        -0.0110203  0.0100388  -1.098 0.279213    
+Education   -0.0218201  0.0177721  -1.228 0.227084    
+Income       0.0114118  0.0062411   1.828 0.075333 .  
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-(Dispersion parameter for poisson family taken to be 0.1400928)
+(Dispersion parameter for poisson family taken to be 0.1401078)
 
 Number of Fisher Scoring iterations: 4
 
-Title:
- Hyperlipidemia and Food adjusted by Gender Age Race 
-
-Call:
-svyglm(formula = F2a, design = S, family = poisson(), data = D)
-
-Survey design:
-svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
-    weights_column], data = nhanes_data)
-
-Coefficients:
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -1.812500   0.074075 -24.469  < 2e-16 ***
-Food        -0.041807   0.087862  -0.476  0.63679    
-Gender      -0.091873   0.026370  -3.484  0.00121 ** 
-Age          0.027037   0.001327  20.380  < 2e-16 ***
-Race         0.030188   0.018209   1.658  0.10517    
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-(Dispersion parameter for poisson family taken to be 0.4773669)
-
-Number of Fisher Scoring iterations: 5
+Odds Ratios:  
+ Intercept Food Gender Age Race Education Income 
+ 0.7791724 1.020715 0.9839742 1.002199 0.9890402 0.9784162 1.011477 
 
 Title:
  Hyperlipidemia and Food adjusted by Gender Age Race Education Income 
 
 Call:
-svyglm(formula = F2b, design = S, family = poisson(), data = D)
+svyglm(formula = F2, design = S, family = poisson(), data = D)
 
 Survey design:
 svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
@@ -161,49 +117,29 @@ svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[,
 
 Coefficients:
              Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -1.927533   1.027867  -1.875  0.06845 .  
-Food        -0.052303   0.099150  -0.528  0.60091    
-Gender      -0.090667   0.026952  -3.364  0.00176 ** 
-Age          0.027203   0.001322  20.578  < 2e-16 ***
-Race         0.032783   0.019567   1.675  0.10206    
-Education   -0.054635   0.036690  -1.489  0.14472    
-Income       0.021790   0.207629   0.105  0.91697    
+(Intercept) -1.979581   0.123000 -16.094  < 2e-16 ***
+Food         0.151041   0.047850   3.157  0.00312 ** 
+Gender      -0.106711   0.030847  -3.459  0.00135 ** 
+Age          0.030057   0.001661  18.100  < 2e-16 ***
+Race         0.022549   0.024239   0.930  0.35810    
+Education   -0.043076   0.044620  -0.965  0.34044    
+Income      -0.007834   0.016992  -0.461  0.64741    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-(Dispersion parameter for poisson family taken to be 0.4801104)
+(Dispersion parameter for poisson family taken to be 0.5694566)
 
 Number of Fisher Scoring iterations: 5
 
-Title:
- Diabetes and Food adjusted by Gender Age Race 
-
-Call:
-svyglm(formula = F3a, design = S, family = poisson(), data = D)
-
-Survey design:
-svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
-    weights_column], data = nhanes_data)
-
-Coefficients:
-             Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -6.894838   0.343753 -20.058  < 2e-16 ***
-Food         0.475649   0.336543   1.413 0.165292    
-Gender      -0.396177   0.101548  -3.901 0.000357 ***
-Age          0.078973   0.005774  13.677  < 2e-16 ***
-Race         0.327536   0.070096   4.673 3.34e-05 ***
----
-Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-
-(Dispersion parameter for poisson family taken to be 0.8760317)
-
-Number of Fisher Scoring iterations: 6
+Odds Ratios:  
+ Intercept Food Gender Age Race Education Income 
+ 0.1381272 1.163045 0.8987857 1.030513 1.022805 0.9578381 0.9921968 
 
 Title:
  Diabetes and Food adjusted by Gender Age Race Education Income 
 
 Call:
-svyglm(formula = F3b, design = S, family = poisson(), data = D)
+svyglm(formula = F3, design = S, family = poisson(), data = D)
 
 Survey design:
 svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[, 
@@ -211,19 +147,23 @@ svydesign(ids = ~SDMVPSU, strata = ~SDMVSTRA, nest = T, weights = nhanes_data[,
 
 Coefficients:
              Estimate Std. Error t value Pr(>|t|)    
-(Intercept) -4.296932   3.453839  -1.244 0.221081    
-Food         0.375100   0.339335   1.105 0.275937    
-Gender      -0.370249   0.101530  -3.647 0.000793 ***
-Age          0.076839   0.005729  13.413 5.46e-16 ***
-Race         0.222996   0.071132   3.135 0.003309 ** 
-Education    0.659817   0.139610   4.726 3.11e-05 ***
-Income      -0.495788   0.680087  -0.729 0.470466    
+(Intercept) -5.849327   0.318208 -18.382   <2e-16 ***
+Food         0.284397   0.155404   1.830   0.0751 .  
+Gender      -0.107028   0.116058  -0.922   0.3622    
+Age          0.076043   0.004930  15.425   <2e-16 ***
+Race         0.007404   0.062171   0.119   0.9058    
+Education    0.074668   0.112503   0.664   0.5109    
+Income      -0.031776   0.042425  -0.749   0.4585    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
-(Dispersion parameter for poisson family taken to be 0.8796346)
+(Dispersion parameter for poisson family taken to be 0.8421069)
 
 Number of Fisher Scoring iterations: 6
+
+Odds Ratios:  
+ Intercept Food Gender Age Race Education Income 
+ 0.002881837 1.328961 0.8985004 1.079009 1.007432 1.077527 0.9687239 
 
 #################### 
 
